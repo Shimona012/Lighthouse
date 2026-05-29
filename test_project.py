@@ -8,7 +8,7 @@ from project import (
     closest_emotion,
     display_emotion,
     SUPPORTED_EMOTIONS,
-    support,
+
 )
 
 
