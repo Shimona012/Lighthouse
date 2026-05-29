@@ -347,7 +347,7 @@ def main():
             recommendations()
         elif choice == "5":
             print("Exiting...")
-            print("Thank you for using the app!Hope it was helpful.\u263a")
+            console.print("Thank you for using the app!Hope it was helpful.\u263a",style="bold yellow")
             break
         else:
             print("Invalid choice. Please try again.")
@@ -1545,6 +1545,7 @@ def recommendations():
             ),
             style="bold yellow",
         )
+        sys.exit()
 
 
 if __name__ == "__main__":
@@ -1552,5 +1553,5 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         console.print(
-            "\n[bold yellow]Exiting the program...Thank you!Byee :D[/bold yellow]"
+            "\nExiting the program...Thank you!Byee :D",style="bold yellow"
         )
