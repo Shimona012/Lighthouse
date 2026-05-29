@@ -1,5 +1,5 @@
 # Lighthouse 💡
-#### Video Demo: <URL HERE>
+#### Video Demo: https://youtu.be/cKbNg5Laqhg
 #### GitHub Repository: https://github.com/Shimona012/Lighthouse
 #### Description:
 
