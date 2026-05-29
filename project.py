@@ -1514,7 +1514,8 @@ def recommendations():
             "This is just the base version and anyone is free to add more features to it and make it better. We are open to suggestions and feedbacks."
         )
     )
-    console.print(Align.center("Github Repository:"), style="bold green")
+    rep_link="[link=https://github.com/Shimona012/Lighthouse] GitHub Repository [/link]"
+    console.print(Align.center(f"Github Repository: {rep_link}"), style="bold green")
     console.print(Align.center("Made for teens by teens <3"), style="bold magenta")
     rainbow_name = (
         "[red]-S[/red]"
