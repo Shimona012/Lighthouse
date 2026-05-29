@@ -86,22 +86,6 @@ def display_emotion(key):
     return EMOTION_DISPLAY.get(key, key.replace("_", " ").title())
 
 
-# Dots animation for loading effect
-dots = ""
-for i in range(3):
-
-    dots += "."  # To get the effect of increasing dots
-
-    console.clear()
-
-    console.print(
-        Align.center(f"[bold cyan]{dots}[/bold cyan]")
-    )  # To print the dots in the center of the console
-
-    time.sleep(
-        0.5
-    )  # To give the illusion of animation by adding a delay between each print
-
 # Cowsay animals list for random selection
 COWS = [
     cowsay.cow,
@@ -290,6 +274,21 @@ def main():
         "data"
     ):  # checking if the data directory exists to store journal entries, if not it creates one
         os.makedirs("data")
+    # Dots animation for loading effect
+    dots = ""
+    for i in range(3):
+    
+        dots += "."  # To get the effect of increasing dots
+    
+        console.clear()
+    
+        console.print(
+            Align.center(f"[bold cyan]{dots}[/bold cyan]")
+        )  # To print the dots in the center of the console
+    
+        time.sleep(
+            0.5
+        )  # To give the illusion of animation by adding a delay between each print
     while True:
         menu = """
         1. Journal
@@ -507,8 +506,9 @@ def journal():
                             entry = pickle.load(f)
                         except EOFError:
                             break
-                        content.sort(key=lambda x: str(x.date))
                         content.append(entry)
+                        content.sort(key=lambda x: str(x.date))
+                        
 
                         if entry.id == entry_id:
                             found = True
