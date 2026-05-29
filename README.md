@@ -20,7 +20,7 @@ When a user writes a journal entry, the application runs keyword scoring across 
 
 **`project.py`** — The main application file. Contains the `main` function, all menu logic, the `JournalEntry` class with `emotion_analysis` as a static method, and the following functions at the top level:
 
-- `main()` — Entry point. Creates the `data/` folder if it doesn't exist, and displays the main menu loop where the user navigates to Journal, Calendar, Support, or Recommendations.
+- `main()` — Entry point. Creates the `data/` folder if it doesn't exist,runs the loading animation, and displays the main menu loop where the user navigates to Journal, Calendar, Support, or Recommendations.
 - `detect_emotion_with_claim(text, claimed_emotion)` — Takes journal content and an optional user-provided emotion label. Returns the final emotion key and the detected emotion separately. Crisis and abuse keywords always override the claimed emotion.
 - `closest_emotion(user_emotion)` — Uses `difflib.get_close_matches` to fuzzy-match a user's typed emotion label to the nearest valid internal key. Returns `unknown_help` if nothing matches closely enough.
 - `display_emotion(key)` — Converts internal emotion keys like `stress_overwhelm` into user-facing single words like `Stressed`. Prevents internal back-end details from leaking into the UI and making it displeasing for the user.
