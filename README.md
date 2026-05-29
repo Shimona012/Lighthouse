@@ -1,6 +1,6 @@
 # Lighthouse 💡
 #### Video Demo: <URL HERE>
-#### GitHub Repository: <URL HERE>
+#### GitHub Repository: https://github.com/Shimona012/Lighthouse
 #### Description:
 
 Lighthouse is a terminal-based,menu-driven mental health journaling application as well as a basic resource to guide teens, who have 'feels'. Its Built for teenagers. It provides a private, low-pressure space to write about how they are feeling, understand their emotions, and access coping resources, all offline, with no account required. The name Lighthouse was chosen intentionally: a lighthouse cannot save ships, but it can guide them. That is what this application tries to be, a guiding beacon.
