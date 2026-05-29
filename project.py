@@ -1220,7 +1220,7 @@ def support():
             shown_quotes = set()
             shown_activities = set()
             shown_memes = set()
-
+            #To avoid duplication
             show_moreable(distractions.get("jokes", []), "Joke", shown_jokes)
             show_moreable(distractions.get("quotes", []), "Quote", shown_quotes)
             show_moreable(
@@ -1239,7 +1239,7 @@ def support():
                     .lower()
                     .strip()
                 )
-                #
+                
                 if cmd == "j":
                     show_moreable(distractions.get("jokes", []), "Joke", shown_jokes)
                 elif cmd == "q":
